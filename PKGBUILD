@@ -5,7 +5,7 @@
 
 pkgname=containernet-git
 pkgver=3.1.r446.gc068942
-pkgrel=1
+pkgrel=2
 pkgdesc="Mininet fork adding support for container-based emulated hosts"
 _mn_deps=('python' 'iproute2' 'net-tools' 'iputils' 'inetutils' 'iperf'
           'ethtool' 'libcgroup' 'openvswitch' 'psmisc')
@@ -16,7 +16,8 @@ optdepends=('xorg-xhost: for X11 forwarding'
             'socat: for X11 forwarding'
             'xterm: required for MiniEdit'
             'tk: required for MiniEdit')
-makedepends=('git' 'help2man' 'python-build' 'python-installer' 'python-wheel')
+makedepends=('git' 'help2man' 'python-setuptools' 'python-build'
+             'python-installer' 'python-wheel')
 arch=('x86_64')
 url="https://github.com/containernet/containernet"
 license=('custom')
